@@ -8,3 +8,9 @@ pub enum Level {
     Debug,
     Trace,
 }
+
+pub mod export {
+    pub use super::*;
+
+    pub use LevelMapping as Level;
+}

@@ -4,6 +4,6 @@ table! {
 
     logs (id) {
         id -> Int4,
-        severity -> Level,
+        severity -> LevelMapping,
     }
 }
