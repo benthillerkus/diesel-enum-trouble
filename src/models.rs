@@ -5,4 +5,5 @@ use crate::schema::logs;
 pub struct Log {
   pub id: i32,
   pub severity: Level,
+  pub message: Option<String>,
 }

@@ -26,5 +26,5 @@ fn main() {
 
     use crate::schema::logs::dsl::*;
 
-    insert_into(logs).values(severity.eq(Level::Warn)).execute(&connection).expect("Error saving new log");
+    insert_into(logs).values((severity.eq(Level::Info), message.eq(Some("Hallo")))).execute(&connection).expect("Error saving new log");
 }
