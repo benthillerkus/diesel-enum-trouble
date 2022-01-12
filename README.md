@@ -1,3 +1,11 @@
+### Fix
+
+In the generated schema you need to import `{YourEnumName}Mapping` instead of `{YourEnumName}`.
+
+To prevent having to edit the [_`schema.rs`_](src/schema.rs) manually, you can re-export the Mapping type to just be called `{YourEnumName}`.
+Then add that re-export to the [_`diesel.toml`_](diesel.toml).
+
+### Old: problem description
 
 This example is abridged from the [Diesel getting started guide](https://diesel.rs/guides/getting-started).
 
